@@ -25,10 +25,14 @@ This module is for download Etherscan transaction details and method, including 
 ```python
 import onchain_analysis
 
-transaction = onchain_analysis.Erc20_Tx(etherscan_api_key = YOUR_API_KEY, chromedriver_absolute_path = YOUR_DRIVER_PATH)
+transaction = onchain_analysis.Erc20_Tx(etherscan_api_key = YOUR_API_KEY, 
+                                        chromedriver_absolute_path = YOUR_DRIVER_PATH)
 
-tx_details = transaction.get_erc20_transfer_by_address(contract_address = TOKEN_CONTRACT_ACCOUNT, address = EOA)
+tx_details = transaction.get_erc20_transfer_by_address(contract_address = TOKEN_CONTRACT_ACCOUNT, 
+                                                       address = EOA)
 
-tx_method = transaction.tx_method(contract_address = TOKEN_CONTRACT_ACCOUNT, address = EOA)
+tx_method = transaction.tx_method(contract_address = TOKEN_CONTRACT_ACCOUNT,  
+                                                     address = EOA)
 ```
 
+The outcome would be two list contained the data.
