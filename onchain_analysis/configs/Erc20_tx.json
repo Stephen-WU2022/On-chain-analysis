@@ -7,9 +7,9 @@
         "User_Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36 RuxitSynthetic/1.0 v19235706736 t8956255690119070740 athfa3c3975 altpub cvcv=2 smf=0",
         "URL": "https://etherscan.io/token/{}?a={}",
         "iframe_id": "tokentxnsiframe",
-        "page_number_class_name": "font-weight-medium",
-        "table_XPATH": "// *[ @ id = \"maindiv\"] / div[2] / table / tbody",
-        "next_page_XPATH": " // *[ @ id = \"maindiv\"] / div[1] / nav / ul / li[4] / a"
+        "page_number_XPATH": "//*[@id='divDataInfo']/div/nav/ul/li[3]/span",
+        "table_XPATH": "// *[ @ id = 'maindiv'] / div[2] / table / tbody",
+        "next_page_XPATH": " // *[ @ id = 'divDataInfo'] / div / nav / ul / li[5] / a"
     },
     "etherscan_api": {
         "module": {

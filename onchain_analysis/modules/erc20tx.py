@@ -86,12 +86,12 @@ class Erc20_Tx:
 
 
     def __page_nums(self, driver: selenium.webdriver.chrome.webdriver.WebDriver):
-        return float(driver.find_elements(By.CLASS_NAME, self.erc20_config["transaction_method"]["page_number_class_name"])[-1].text)
+        return float(driver.find_elements(By.XPATH, self.erc20_config["transaction_method"]["page_number_XPATH"])[0].text[-1])
 
 
     def __get_table(self, driver: selenium.webdriver.chrome.webdriver.WebDriver):
         table = driver.find_element(By.XPATH, self.erc20_config["transaction_method"]["table_XPATH"]).text.split("\n")
-        return [i.split(" ")[0:2] for i in table]
+        return [table[i*7:i*7+2] for i in range(int(len(table)/7))]
 
 
     def __next_page(self, driver: selenium.webdriver.chrome.webdriver.WebDriver):
@@ -216,10 +216,6 @@ class Erc20_Tx:
         result = [["timeStamp", "from", "to", "value", "hash"]]
         result.extend([[i["timeStamp"], i["from"], i["to"], i["value"], i["hash"]] for i in data])
         return result
-
-
-
-
 
 
 
