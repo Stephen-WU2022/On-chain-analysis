@@ -7,10 +7,11 @@ For now supporting Ethereum.
 ## Feature
 
 * Check erc20 token transaction details and method (lock, stake...) filtered by token contract account and EOA
+* Analyze transaction receipt by mutiple filter for method, value (transaction number), in-out flow and visualize tool
 
 ## Start
 
-Before proceeding, you should register an account on Etherscan and generate API KEY, also install Selenium and Chrome driver for web scraping
+Before proceeding, you should register an account on Etherscan and generate API KEY, also install Selenium and Chrome driver for web scraping, Pandas, Numpy and Matplotlib for transaction analysis.
 
 * Git clone
 
@@ -36,3 +37,34 @@ tx_method = transaction.tx_method(contract_address = TOKEN_CONTRACT_ACCOUNT,
 ```
 
 The outcome would be two list contained the data.
+
+
+####  _tx analysis_
+
+This module is for analysis transaction receipt from _Erc20 transaction_, function including filter of method, value (transaction number), in-out flow, also provide some visualize tools.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
