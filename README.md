@@ -47,10 +47,10 @@ This module is for analysis transaction receipt from _Erc20 transaction_, functi
 Suppose you have the data from _Erc20 transaction_ and then transfer to Dataframe form
 
 | timestamp  | from | to  | value | hash | method |
-|:-------------:|:-------------:|:-------------:|:-------------:|
-| left foo      | right foo     | left foo      | right foo     |
-| left bar      | right bar     | left foo      | right foo     |
-| left baz      | right baz     | left foo      | right foo     |
+|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
+| left foo      | right foo     | left foo      | right foo     | left foo      | right foo     |
+| left bar      | right bar     | left foo      | right foo     | left foo      | right foo     |
+| left baz      | right baz     | left foo      | right foo     | left foo      | right foo     |
 ```python
 import onchain_analysis
 
