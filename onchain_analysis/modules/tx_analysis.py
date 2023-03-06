@@ -29,6 +29,7 @@ class Tx_analysis:
         :param tx_receipts: data contain transaction receipts in Dataframe form
         :param clusters1_addresses: a bunch of the entity/whales's addresses
         :param clusters2_addresses: the specific clusters (ex. Exchange) interact with
+        :return New column with value  'internal_Tx', 'inflow', 'outflow', 'inflow_from_clusters2', 'outflow_to_clusters2'
         """
         cd = [
             tx_receipts['to'].isin(clusters1_addresses) & tx_receipts['from'].isin(clusters1_addresses),
@@ -52,7 +53,7 @@ class Tx_analysis:
     def methods_filter(tx_receipts: pd.core.frame.DataFrame, *methods):
         """
 
-        :param tx_receipts: data contain transaction receipts in Dataframe form
+        :param tx_receipts: data contain transaction receipts in Dataframe format
         :param methods: the methods set as filter
         :return: Transaction receipts specified by the methods
         """
