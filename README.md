@@ -7,7 +7,7 @@ For now supporting Ethereum.
 ## Feature
 
 * Check erc20 token transaction details and method (lock, stake...) filtered by token contract account and EOA
-* Analyze transaction receipt by mutiple filter for method, value (transaction number), in-out flow and visualize tool
+* Analyze transaction receipt by identify the flow of token, mutiple filter for method value (transaction number) in-out flow, visualize tool
 
 ## Start
 
@@ -41,10 +41,16 @@ The outcome would be two list contained the data.
 
 ####  _Tx analysis_
 
-This module is for analysis transaction receipt from _Erc20 transaction_, function including filter of method, value (transaction number), in-out flow, also provide some visualize tools.
+This module is for analysis transaction receipt from _Erc20 transaction_, function including identifing the flow of token, filter of method value (transaction number) in-out flow, also provide some visualize tools.
 
 
-Suppose you have the data from _Erc20 transaction_
+Suppose you have the data from _Erc20 transaction_ and then transfer to Dataframe form
+
+| timestamp  | from | to  | value | hash | method |
+|:-------------:|:-------------:|:-------------:|:-------------:|
+| left foo      | right foo     | left foo      | right foo     |
+| left bar      | right bar     | left foo      | right foo     |
+| left baz      | right baz     | left foo      | right foo     |
 ```python
 import onchain_analysis
 
