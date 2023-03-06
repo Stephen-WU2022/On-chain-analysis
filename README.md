@@ -127,9 +127,13 @@ Tx_analysis.methods_bar_chart(df,label="Entity_name")
 plt.grid()
 plt.show()
 ```
-_methods_bar_chart_ is for drawing a bar chart base on Matplotlib. 
+_methods_bar_chart_ is for drawing a bar chart base on Matplotlib.  Function accept the assigned color but need to match method type number and in Matplotlib support way
+# 
+![image](https://user-images.githubusercontent.com/116573189/223175866-392612e4-c298-443e-9218-8308dfde912f.png)
 
-Function accept the assigned color but need to match method type number and in Matplotlib support way
+After drawing on the price chart, it would show clearly the specified method occur in what time and how many value.
+
+(Note: bar chart x-axis width is default timestamp 1 day, 86400 second)
 
 
 
