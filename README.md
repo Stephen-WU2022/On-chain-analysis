@@ -39,10 +39,17 @@ tx_method = transaction.tx_method(contract_address = TOKEN_CONTRACT_ACCOUNT,
 The outcome would be two list contained the data.
 
 
-####  _tx analysis_
+####  _Tx analysis_
 
 This module is for analysis transaction receipt from _Erc20 transaction_, function including filter of method, value (transaction number), in-out flow, also provide some visualize tools.
 
+
+Suppose you have the data from _Erc20 transaction_
+```python
+import onchain_analysis
+
+
+```
 
 
 
