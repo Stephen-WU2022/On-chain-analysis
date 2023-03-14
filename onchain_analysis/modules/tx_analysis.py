@@ -31,6 +31,8 @@ class Tx_analysis:
         :param clusters2_addresses: the specific clusters (ex. Exchange) interact with
         :return New column with value  'internal_Tx', 'inflow', 'outflow', 'inflow_from_clusters2', 'outflow_to_clusters2'
         """
+        clusters1_addresses = [x.lower() for x in clusters1_addresses]
+        clusters2_addresses = [x.lower() for x in clusters2_addresses]
         cd = [
             tx_receipts['to'].isin(clusters1_addresses) & tx_receipts['from'].isin(clusters1_addresses),
             tx_receipts['to'].isin(clusters1_addresses) & ~tx_receipts['from'].isin(clusters1_addresses),
