@@ -86,7 +86,7 @@ class Erc20_Tx:
 
 
     def __page_nums(self, driver: selenium.webdriver.chrome.webdriver.WebDriver):
-        return float(driver.find_elements(By.XPATH, self.erc20_config["transaction_method"]["page_number_XPATH"])[0].text[-1])
+        return int(driver.find_elements(By.XPATH, self.erc20_config["transaction_method"]["page_number_XPATH"])[0].text.split(" ")[-1])
 
 
     def __get_table(self, driver: selenium.webdriver.chrome.webdriver.WebDriver):
