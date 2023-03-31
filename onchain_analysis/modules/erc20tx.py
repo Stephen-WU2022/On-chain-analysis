@@ -96,7 +96,7 @@ class Erc20_Tx:
 
     def __next_page(self, driver: selenium.webdriver.chrome.webdriver.WebDriver):
         driver.find_element(By.XPATH, self.erc20_config["transaction_method"]["next_page_XPATH"]).click()
-        time.sleep(0.3)
+        time.sleep(self.erc20_config['transaction_method']['web_rendering_time'])
 
     @tools.Tools.counter
     def __get_method(self, **kwargs) -> list :
