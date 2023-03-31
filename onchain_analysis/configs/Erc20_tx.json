@@ -9,7 +9,7 @@
         "iframe_id": "tokentxnsiframe",
         "page_number_XPATH": "//*[@id='divDataInfo']/div/nav/ul/li[3]/span",
         "table_XPATH": "// *[ @ id = 'maindiv'] / div[2] / table / tbody",
-        "next_page_XPATH": " // *[ @ id = 'divDataInfo'] / div / nav / ul / li[5] / a"
+        "next_page_XPATH": "//*[@id='divDataInfo']/div/nav/ul/li[4]/a"
     },
     "etherscan_api": {
         "module": {
