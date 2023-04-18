@@ -131,7 +131,7 @@ class Tx_analysis:
         for color, method in zip(colors, methods):
             plt.bar(x=tx_receipts.loc[tx_receipts['method'] == method]['timestamp'],
                     height=tx_receipts.loc[tx_receipts['method'] == method]['value'],
-                    width=8.64 * 10 ** 4, label=f"{label}-{method}", color = color)
+                    width=width, label=f"{label}-{method}", color = color)
 
 
     @staticmethod
